@@ -1,5 +1,5 @@
 
-
+console.log('hola soy Fernanda')
    //se crea la funcion
     const getAllPokemon = async ()=>{
 
@@ -7,16 +7,16 @@
 
     const pokemonJs= await pokemons.json()
 
-    pokemonJs.results.forEach(async(pokemon) => {// se esta usando u  foreach
+    pokemonJs.results.forEach(async(pokemon) => {
 
     const pokemonsData= await fetch(pokemon.url)
 
     //console.log(pokemon.url)
     const pokemonsDatajs= await pokemonsData.json()
     
-    console.log(pokemonsDatajs) // se esta imprimiendo el resltado 
+    console.log(pokemonsDatajs) 
     });
     console.log()
     }
 
-    getAllPokemon(); // se realiza el llamado a la funcion
+    getAllPokemon(); 
